@@ -1,0 +1,9 @@
+
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 5px;
+    position: sticky;
+    bottom: 0px;
+    margin-top: 35%;
+  }
