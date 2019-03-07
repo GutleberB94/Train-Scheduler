@@ -40,7 +40,6 @@ $(document).ready(function () {
         $(newRow).append("<td>" + "Need to figure out" + "</td>")
         $(newRow).append("<td>" + "Need to figure out" + "</td>")
 
-
         $("tbody").append(newRow);
 
 
@@ -57,8 +56,6 @@ $(document).ready(function () {
         var destination = $("#train-destination").val().trim();
         var firstTrainTime = $("#train-time").val().trim();
         var frequency = $("#train-frequency").val().trim();
-
-
 
         database.ref().push({
             trainName: trainName,

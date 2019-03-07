@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Train Scheduler</title>
+    <title>Giphtastic</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="../Train-Scheduler/assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
     <script type="text/javascript" src="../Train-Scheduler/assets/javascript/javascript.js"></script>
 
@@ -61,6 +60,7 @@
                 </div>
             </div>
         </div>
+
         <!--Add new train-->
 
         <div class="row">
@@ -82,11 +82,11 @@
                             <div class="form-group">
                                 <label for="first-train-time">First Train Time (HH:mm - military
                                     time</label>
-                                <input class="form-control" id="train-time" type="number">
+                                <input class="form-control" id="train-time" type="text">
                             </div>
                             <div class="form-group">
                                 <label for="train-frequency">Frequency (min) </label>
-                                <input class="form-control" id="train-frequency" type="number">
+                                <input class="form-control" id="train-frequency" type="text">
                             </div>
                             <button class="btn btn-primary" id="submit-train">Submit</button>
                         </form>
@@ -102,7 +102,6 @@
     <footer class="container-fluid text-center">
         <p>Copyright &copy</p>
     </footer>
-
 
     <!--     Bootstrap information  -->
 
