@@ -35,7 +35,6 @@ $(document).ready(function () {
 
         $(newRow).append("<td>" + trainName + "</td>")
         $(newRow).append("<td>" + destination + "</td>")
-        $(newRow).append("<td>" + firstTrainTime + "</td>")
         $(newRow).append("<td>" + frequency + "</td>")
         $(newRow).append("<td>" + "Need to figure out" + "</td>")
         $(newRow).append("<td>" + "Need to figure out" + "</td>")
