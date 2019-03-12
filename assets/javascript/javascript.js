@@ -33,14 +33,10 @@ $(document).ready(function () {
         var firstTrainTime = childSnapshot.val().firstTrainTime
         var frequency = childSnapshot.val().frequency
 
-
         var firstTrainMoment = moment(firstTrainTime, 'HH:mm')
-        var trainFrequencyMoment = moment(frequency, 'HH:mm')
 
         var nextArrival = moment(firstTrainMoment).add(frequency, 'minutes').format('HH:mm')
 
-       // console.log(firstTrainMoment)
-        console.log(nextArrival)
         var frequency = childSnapshot.val().frequency
 
         $(newRow).append("<td>" + trainName + "</td>")
