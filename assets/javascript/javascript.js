@@ -33,10 +33,20 @@ $(document).ready(function () {
         var firstTrainTime = childSnapshot.val().firstTrainTime
         var frequency = childSnapshot.val().frequency
 
+
+        var firstTrainMoment = moment(firstTrainTime, 'HH:mm')
+        var trainFrequencyMoment = moment(frequency, 'HH:mm')
+
+        var nextArrival = moment(firstTrainMoment).add(frequency, 'minutes').format('HH:mm')
+
+       // console.log(firstTrainMoment)
+        console.log(nextArrival)
+        var frequency = childSnapshot.val().frequency
+
         $(newRow).append("<td>" + trainName + "</td>")
         $(newRow).append("<td>" + destination + "</td>")
         $(newRow).append("<td>" + frequency + "</td>")
-        $(newRow).append("<td>" + "Need to figure out" + "</td>")
+        $(newRow).append("<td>" + nextArrival + "</td>")
         $(newRow).append("<td>" + "Need to figure out" + "</td>")
 
         $("tbody").append(newRow);
@@ -54,6 +64,7 @@ $(document).ready(function () {
         var trainName = $("#train-name").val().trim();
         var destination = $("#train-destination").val().trim();
         var firstTrainTime = $("#train-time").val().trim();
+        var momentFirstTrainTime = moment(firstTrainTime).format('HH:mm');
         var frequency = $("#train-frequency").val().trim();
 
         database.ref().push({
